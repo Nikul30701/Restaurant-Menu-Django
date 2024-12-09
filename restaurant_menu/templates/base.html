@@ -12,41 +12,53 @@
         body {
             background-color: #fbe3e8;
             font-family: Jaro;
+            height:auto;
         }
+        
         .navbar {
             background-color: #D6ED17FF; /* Dark background color */
             margin-bottom: 20px;
+            z-index: 100;
+            width:100%;
+            position:fixed;
         }
+
         .navbar-brand {
             font-weight: bold;
             font-size: 1.5em;
             color: #be2a2a !important;
         }
+
         .nav-link {
             color: #F2AA4CFF !important;
         }
+
         .nav-link:hover {
             color: #4606e9 !important;
         }
+
         .container {
             max-width: 960px;
-            background-color: #F1F0E8;
+            background-color: #e8e6d5;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            top:70px;
+            overflow-y: auto;
         }
+
         h1, h2 {
             color: #343a40;
         }
 
         footer {
-            margin-top: 20px;
+            margin-top: 85px;
             padding: 10px 0;
             background-color: #343a40;
             color: #d4d4d4;
             text-align: center;
             border-top: 1px solid #474f57;
-            bottom: 10px;
         }
     </style>
 </head>
