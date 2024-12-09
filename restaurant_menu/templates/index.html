@@ -8,7 +8,7 @@
                 {% for row in item_list %}
                     {% if row.meal_type == meal.0 %}
                         {% if row.status == 0 %}
-                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 pb-0" style="color: #bf4aa8;">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 pb-0" style="color: #bf4aa8; background-color: #acb7ae">
                             <a href="{% url 'menu_item' row.pk %}"><h3 style="color: #8076a3;"><del>{{ row.meal }}</del></h3></a>
                             <span class="badge bg-primary rounded-pill">{{ row.price }}</span>
                         </li>
@@ -16,7 +16,7 @@
                             <p>{{ row.description }}</p>
                         </li>
                         {% else %}
-                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 pb-0" style="background-color: #acb7ae">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 pb-0" style="color: #bf4aa8; background-color: #acb7ae">
                             <a href="{% url 'menu_item' row.pk %}"><h3 style="color: #8076a3;">{{ row.meal }}</h3></a>
                             <span class="badge bg-warning text-dark rounded-pill" style="color: #8076a3;">{{ row.price }}</span>
                         </li>
